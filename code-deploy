@@ -97,7 +97,7 @@ while [ $counter -le 12 ]
           # Get the element at the random index
           random_element="${my_array[random_index]}"
 
-           dateUsed=$(gdate -d "2023-03-10 $random_hour_element hours $mn minutes $sc seconds" "+%a %b %d %H:%M:%S %Y %z")
+           dateUsed=$(gdate -d "2023-05-05 $random_hour_element hours $mn minutes $sc seconds" "+%a %b %d %H:%M:%S %Y %z")
            echo $dateUsed > feature.md
            git add .
            git commit -m "$random_element"
